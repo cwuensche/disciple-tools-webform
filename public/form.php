@@ -266,7 +266,7 @@ if ( isset( $dt_webform_meta['disable'] ) && 'disabled' === $dt_webform_meta['di
                                 <br>
                                 <div id="mapbox-wrapper">
                                     <div id="mapbox-autocomplete" class="mapbox-autocomplete input-group" data-autosubmit="true">
-                                        <input id="mapbox-search" type="text" name="mapbox_search" placeholder="Search Location" class="input-text ignore" style="width:95%" <?php echo esc_attr( $dt_webform_value['required'] == 'yes' ? 'required' : '' ) ?> /><span id="mapbox-spinner-button" style="display:none;width:5%;padding:8px;"><img src="<?php echo esc_url( plugin_dir_url( __FILE__ ) ) ?>spinner.svg" alt="spinner" style="width: 20px;" /></span>
+                                        <input id="mapbox-search" type="text" name="mapbox_search" placeholder="<?php esc_attr_e( 'Search Location', 'dt_webform' ); ?>" class="input-text ignore" style="width:95%" <?php echo esc_attr( $dt_webform_value['required'] == 'yes' ? 'required' : '' ) ?> /><span id="mapbox-spinner-button" style="display:none;width:5%;padding:8px;"><img src="<?php echo esc_url( plugin_dir_url( __FILE__ ) ) ?>spinner.svg" alt="spinner" style="width: 20px;" /></span>
                                         <div id="mapbox-autocomplete-list" class="mapbox-autocomplete-items"></div>
                                         <div style="display:none;">
                                             <span id="<?php echo esc_attr( $dt_webform_value['key'] ) ?>-lng" data-type="lng" class="location"></span>
